@@ -1,0 +1,175 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-color: rgb(235, 233, 233);
+    /* min-width: 350px; */
+}
+#upper-part{
+    height: 50%;
+    background-image: url("./images/movie.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#upper-part .box{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#lower-part{
+    height: 50%;
+    width: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav #imdb-logo{
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+nav button::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(236, 10, 28);
+    margin: auto;
+    display: block;
+}
+
+nav button:hover::after {
+    width: 100%;
+    transition: width 0.2s linear;
+}
+
+nav button:hover {
+    color: red;
+}
+
+#input-section{
+    text-align: center;
+    position: relative;
+    margin-top: 34vh;
+    padding-bottom: 20px;
+}
+
+#input-section h2{
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 3rem;
+}
+
+#input-section #search{
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+#input-section input {
+    flex: 0.4;
+    background-color: cornsilk;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 1.5rem;
+}
+
+#input-section button{
+    background-color: cornsilk;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#lower-part ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 10vh;
+    list-style: none;
+}
+#movie-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#movie-list-div{
+    /* box-shadow: 1px 2px #d70909; */
+    background-color: rgb(112, 110, 110);
+    margin-bottom: 20px;
+    height: 60vh;
+    width: 35vh;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#movie-list-div img{
+    height: 83%;
+    width: 100%;
+    opacity: 0.8;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+#movie-list-div img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+}
+#movie-caption{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0% 4% 0% 4%;
+    font-size: 1.2rem;
+}
+
+#clicked-movie-div{
+    display: flex;
+    background-color: rgb(173, 169, 169);
+    width: 55%; 
+}
+
+#content{
+    margin-left: 10px;
+    font-size: larger;
+    color: #4f0505;
+    position: relative;
+}
+#addToFavBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
