@@ -15,4 +15,4 @@ Thank you..
 
 Github link: https://github.com/Bikash-Dushad/imdb-clone
 Hosted link: https://bikash-dushad.github.io/imdb-clone/
-Video link: 
+Video link: https://www.youtube.com/watch?v=FF2OUdYTPdA
